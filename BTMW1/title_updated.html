@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BISU Thesis Management</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .page-title {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-title">BISU Thesis Management System</div>
+
+    <div class="container">
+      <div class="form__text">
+        <p><a class="form__link" id="studentRegLink">Student Registration</a></p>
+        <p><a class="form__link" id="studentLogLink">Student Login</a></p>
+        <p><a class="form__link" id="adviserLink">Adviser & Panelist Registration</a></p>
+        <p><a class="form__link" id="adminLogLink">Admin Login</a></p>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("studentRegLink").addEventListener("click", function () {
+        window.location.href = "studentreg.html";
+      });
+
+      document.getElementById("studentLogLink").addEventListener("click", function () {
+        window.location.href = "studentlogg.html";
+      });
+
+      document.getElementById("adviserLink").addEventListener("click", function () {
+        window.location.href = "panel.html";
+      });
+
+      document.getElementById("adminLogLink").addEventListener("click", function () {
+        window.location.href = "adminlog.html";
+      });
+    </script>
+  </body>
+</html>
